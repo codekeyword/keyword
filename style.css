@@ -1,0 +1,1146 @@
+@font-face {
+  font-family: Clip;
+  src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+}
+
+body {
+    overflow: hidden;
+  background-color: #141114;
+  background-image: linear-gradient(335deg, black 23px, transparent 23px),
+    linear-gradient(155deg, black 23px, transparent 23px),
+    linear-gradient(335deg, black 23px, transparent 23px),
+    linear-gradient(155deg, black 23px, transparent 23px);
+  background-size: 58px 58px;
+  background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+}
+body,
+html {
+  height: 100vh;
+}
+
+#myVideo {
+  position: fixed;
+  top:240px;
+  /* left: 25%; */
+  /* right: 0;
+    bottom: 0; */
+}
+.main-title{
+  display: block;
+  text-align: center;
+  align-content: flex-end;
+  
+
+    position: relative;
+    z-index: 10;
+
+  /* background-color: #141114;
+  background-image: linear-gradient(335deg, black 23px, transparent 23px),
+    linear-gradient(155deg, black 23px, transparent 23px),
+    linear-gradient(335deg, black 23px, transparent 23px),
+    linear-gradient(155deg, black 23px, transparent 23px);
+  background-size: 58px 58px;
+  background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;   */
+  background-image: radial-gradient(
+    ellipse 24% 12%  at 50% 90%,
+    #6b1839,
+    transparent
+  );
+  font-family: "Clip";
+  width: 650px;
+  height: 720px;
+  margin: auto;
+  font-size: 0;
+  color: #ffe6ff;
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+    -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  animation: shine 2s forwards, flicker 3s infinite,
+   zoom-in 3.6s cubic-bezier(0.9, 0.49, 0.97, 0.39) forwards;
+  
+}
+ 
+.sign {
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  
+  background-image: ellipse(
+    ellipse 50% 35% at 50% 50%,
+    #6b1839,
+    transparent
+  );
+  transform: translate(-50%, -50%);
+  letter-spacing: 2;
+  left: 50%;
+  top: 50%;
+  font-family: "Clip";
+  text-transform: uppercase;
+  font-size: 6em;
+  color: #ffe6ff;
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+    -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  animation: shine 2s forwards, flicker 3s forwards;
+}
+.text-conatiner{
+    min-width: 100vw;
+    min-height: 850px;
+    background-color: #141114;
+  background-image: linear-gradient(335deg, black 23px, transparent 23px),
+    linear-gradient(155deg, black 23px, transparent 23px),
+    linear-gradient(335deg, black 23px, transparent 23px),
+    linear-gradient(155deg, black 23px, transparent 23px);
+  background-size: 58px 58px;
+  background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px; 
+  position: absolute;
+  width: 100%;
+}
+.mask-gradient{
+    position: absolute;
+    bottom: 0;
+    min-width: 100vw;
+    min-height: 20vh;
+    background: rgb(236,235,240);
+    background: linear-gradient(180deg, rgba(236,235,240,0) 0%, rgba(0,0,0,1) 97%, rgba(0,0,0,1) 100%);
+}
+.ss8-dis{
+    display: block; 
+   
+}
+.ss8-non{
+    display: none;   
+}
+.ss8{
+    height: 850px;
+   
+}
+.ss8 .title span{
+    font-size: 64px;
+}   
+
+.title {
+  display: block;
+  text-align: center;
+  align-content: flex-end;
+  
+
+    position: relative;
+    z-index: 10;
+
+  /* background-color: #141114;
+  background-image: linear-gradient(335deg, black 23px, transparent 23px),
+    linear-gradient(155deg, black 23px, transparent 23px),
+    linear-gradient(335deg, black 23px, transparent 23px),
+    linear-gradient(155deg, black 23px, transparent 23px);
+  background-size: 58px 58px;
+  background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;   */
+  background-image: radial-gradient(
+    ellipse 24% 12%  at 50% 92%,
+    #6b1839,
+    transparent
+  );
+  font-family: "Clip";
+  width: 650px;
+  height: 720px;
+  margin: auto;
+  font-size: 0;
+  color: #ffe6ff;
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+    -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  animation: shine 2s forwards, flicker 3s infinite,
+   zoom-in 3.6s cubic-bezier(0.9, 0.49, 0.97, 0.39) forwards;
+  
+}
+.ss30 .title-ls span{
+  font-size: 64px;
+}  
+
+.title-ls {
+  display: block;
+  text-align: center;
+  align-content: flex-end;
+  
+
+    position: relative;
+    z-index: 10;
+
+  /* background-color: #141114;
+  background-image: linear-gradient(335deg, black 23px, transparent 23px),
+    linear-gradient(155deg, black 23px, transparent 23px),
+    linear-gradient(335deg, black 23px, transparent 23px),
+    linear-gradient(155deg, black 23px, transparent 23px);
+  background-size: 58px 58px;
+  background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;   */
+  background-image: radial-gradient(
+    ellipse 24% 12%  at 50% 50%,
+    #6b1839,
+    transparent
+  );
+  font-family: "Clip";
+  margin: 2vh;
+  font-size: 0;
+  color: #ffe6ff;
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+    -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  animation: shine 2s forwards, flicker 3s infinite,
+   zoom-in 3.6s cubic-bezier(0.9, 0.49, 0.97, 0.39) forwards;
+  
+}
+
+.ss12-dis{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: flex-end;
+}
+.ss12-non{
+    display: none;
+}
+ .ss12 {
+   width: 450px;
+  height: 950px;
+
+}
+.title-12ss span{
+    font-size: 64px;
+   
+}
+
+
+.title-12ss {
+   
+    display: block;   
+    /* background-color: #141114;
+    background-image: linear-gradient(335deg, black 23px, transparent 23px),
+      linear-gradient(155deg, black 23px, transparent 23px),
+      linear-gradient(335deg, black 23px, transparent 23px),
+      linear-gradient(155deg, black 23px, transparent 23px);
+    background-size: 58px 58px;
+    background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;   */
+    background-image: radial-gradient(
+      ellipse 55% 16%  at 12% 50%,
+      #6b1839,
+      transparent
+    );
+    font-family: "Clip";
+   
+   
+    font-size: 0;
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    animation: shine 2s forwards, flicker 3s infinite;
+    
+  }
+
+  .title-18ss { 
+    z-index: 2;  
+    display: block;   
+    margin: auto;
+
+    font-family: "Clip";   
+    font-size: 0;
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    animation: shine 2s forwards, flicker 3s infinite;
+    
+  }
+.title .t-con{
+    font-size: 2.6rem; 
+    padding: 2vh;
+    /* background-image: radial-gradient(
+        ellipse 55% 36%  at 20% 20%,
+        #6b1839,
+        transparent
+      ); */
+      position: relative;
+      z-index: 1000;     
+}
+.t-con span{
+    font-size: 2.6rem; 
+}
+
+.mid{
+    font-size: 0px;
+    grid-area: mid;
+   
+      text-align: center;
+      align-content: flex-end;
+      span{
+        font-size: 28px;
+      }
+}
+.id{
+    grid-area: id;
+    height: 52px;
+    width: 280px;
+    align-content: center;
+    span{
+        font-size: 42px;
+      }
+}
+.err{
+    grid-area: err;
+    height: 52px;
+    align-content: start;
+    span{
+        font-size: 32px;
+      }
+}
+.stus{
+    grid-area: stus;
+    height: 76px;
+    align-content: end;
+    span{
+        font-size: 36px;
+      }
+}
+.ht{
+    grid-area: ht;
+    height: 76px;
+    width: 210px;
+    align-content: start;
+    span{
+        font-size: 48px;
+      }
+    
+}
+
+.ssl{
+    grid-area: ssl;
+    text-align: center;
+    align-content: center;
+    span{
+        font-size: 48px;
+      }
+}
+.api{
+    grid-area: api;
+    text-align: center;
+    background-image: radial-gradient(
+        ellipse 55% 16%  at 50% 50%,
+        #6b1839,
+        transparent
+      );
+    span{
+        font-size: 64px; 
+      }
+ 
+}
+.serv{
+    grid-area: serv;
+    align-content: flex-end;
+    text-align: right;
+    span{
+        font-size: 36px;
+      }
+}
+.auth{
+    grid-area: auth;
+    align-content: flex-end;
+    height: 76px;
+    span{
+        font-size: 36px;
+      }
+}
+.ss18 {
+    width: 750px;   
+    margin: auto;
+    margin-top: 24vh;
+}
+.ss18-dis{
+    display: grid;
+   grid-template-areas:  ". mid ."
+                         "err . stus"
+                         ". id . "
+                        ". . ht"
+                        "ssl api serv"
+                        ". auth ." ;
+}
+.ss20 {
+    width: 750px;   
+    margin: auto;
+    margin-top: 24vh;
+}
+.ss20-non{
+    display: none;
+}
+.ss20-dis{
+    display: grid;
+   grid-template-areas:  ". stag ."
+                         "dev . qa"
+                         ". prod . "
+                        ". . mer"
+                        "bug git bran"
+                        ". task  pr" ;
+}
+
+/* ss25 start */
+.ss25 {
+  width: 750px;   
+  margin: auto;
+  margin-top: 24vh;
+}
+.ss25-non{
+  display: none;
+}
+.ss25-dis{
+  display: grid;
+  grid-template-areas:  ". exec ."
+                         "optimz . table"
+                         ". logs . "
+                        ". . connct"
+                        "row db key"
+                        ". migr  index" ;
+}
+
+.exec{
+  font-size: 0px;
+  grid-area: exec;
+  
+    text-align: center;
+    align-content: flex-end;
+    span{
+      font-size: 28px;
+    }
+}
+.optimz{
+  grid-area: optimz;
+  height: 52px;
+  align-content: start;
+  span{
+      font-size: 42px;
+    }
+}
+
+.table{
+  grid-area: table;
+  height: 52px;
+  width: 280px;
+  align-content: center;
+  span{
+      font-size: 42px;
+    }
+}
+
+.logs{
+  grid-area: logs;
+  height: 52px;
+  align-content: end;
+  span{
+      font-size: 36px;
+    }
+}
+.connct{
+  grid-area: connct;
+  height: 76px;
+  width: 210px;
+  align-content: start;
+  span{
+      font-size: 32px;
+    }
+  
+}
+
+.row{
+  grid-area: row;
+  text-align: center;
+  align-content: center;
+  span{
+      font-size: 42px;
+    }
+}
+.db{
+  grid-area: db;
+  text-align: center;
+  background-image: radial-gradient(
+      ellipse 55% 16%  at 50% 50%,
+      #6b1839,
+      transparent
+    );
+  span{
+      font-size: 64px; 
+    }
+    
+
+}
+.key{
+  grid-area: key;
+  align-content: flex-end;
+  text-align: right;
+  span{
+      font-size: 36px;
+    }
+}
+.migr{
+  grid-area: migr;
+  align-content: flex-end;
+  width: 280px;
+  height: 96px;
+  span{
+      font-size: 36px;
+    }
+}
+.index{
+  grid-area: index;
+  align-content: flex-end;
+  height: 56px;
+  width: 180px;
+  span{
+      font-size: 32px;
+    }
+}
+/* ss25 end */
+/* ss26 start */
+.ss26 {
+  width: 750px;   
+  margin: auto;
+  margin-top: 24vh;
+}
+.ss26-non{
+  display: none;
+}
+.ss26-dis{
+  display: grid;
+  grid-template-areas:  ". attch ."
+                        "kt reviw revert"
+                        ". . draft"
+                        "eff team ping"
+                        ". perf  tims" ;
+}
+/* ss30 start */
+
+.ss30 {
+  width: 750px;   
+  height: 450px;
+  margin: auto;
+  margin-top: 24vh;
+}
+.ss30-non{
+  display: none;
+}
+.ss30-dis{
+  display: flex;  
+}
+.ls{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+}
+
+.attch{
+  font-size: 0px;
+  grid-area: attch;
+  
+    text-align: center;
+    align-content: flex-end;
+    span{
+      font-size: 28px;
+    }
+}
+.reviw{
+  grid-area: reviw;
+  height: 52px;
+  align-content: start;
+  span{
+      font-size: 42px;
+    }
+}
+
+.revert{
+  grid-area: revert;
+  height: 52px;
+  width: 280px;
+  align-content: center;
+  span{
+      font-size: 26px;
+    }
+}
+
+.kt{
+  grid-area: kt;
+  height: 76px;
+  align-content: end;
+  span{
+      font-size: 36px;
+    }
+}
+.draft{
+  grid-area: draft;
+  width: 210px;
+  align-content: start;
+  span{
+      font-size: 48px;
+    }
+  
+}
+
+.eff{
+  grid-area: eff;
+  text-align: center;
+  align-content: center;
+  span{
+      font-size: 42px;
+    }
+}
+.team{
+  grid-area: team;
+  text-align: center;
+  background-image: radial-gradient(
+      ellipse 55% 16%  at 50% 50%,
+      #6b1839,
+      transparent
+    );
+  span{
+      font-size: 64px; 
+    }
+    
+
+}
+.ping{
+  grid-area: ping;
+  align-content: flex-end;
+  text-align: right;
+  span{
+      font-size: 36px;
+    }
+}
+.perf{
+  grid-area: perf;
+  align-content: flex-end;
+  width: 280px;
+  height: 96px;
+  span{
+      font-size: 36px;
+    }
+}
+.tims{
+  grid-area: tims;
+  align-content: flex-end;
+  height: 56px;
+  width: 180px;
+  span{
+      font-size: 36px;
+    }
+}
+/* ss26 end */
+/* ss22 start */
+.ss22 {
+    width: 750px;   
+    margin: auto;
+    margin-top: 24vh;
+}
+.ss22-non{
+    display: none;
+}
+.ss22-dis{
+    display: grid;
+   grid-template-areas:  ". trsh comp"                        
+                         ". brpt . "
+                        ". . val"
+                        "iss debug srpt"
+                        ". wrk  exc" ;
+}
+.trsh{
+    font-size: 0px;
+    grid-area: trsh;
+   height: 62px;
+      text-align: center;
+     
+      span{
+        font-size: 28px;
+      }
+}
+
+.comp{
+  font-size: 0px;
+  grid-area: comp;
+ height: 62px;
+    text-align: end;
+   
+    span{
+      font-size: 28px;
+    }
+}
+.brpt{
+    grid-area: brpt;
+    height: 48px;
+    align-content: start;
+    span{
+        font-size: 42px;
+      }
+}
+
+.val{
+    grid-area: val;
+    height: 62px;
+    width: 280px;
+    align-content: center;
+    span{
+        font-size: 32px;
+      }
+}
+
+.iss{
+    grid-area: iss;
+    height: 76px;
+    align-content: end;
+    span{
+        font-size: 36px;
+      }
+}
+.exc{
+    grid-area: exc;
+    text-align: center;
+    align-content: center;
+    span{
+        font-size: 28px;
+      }
+}
+.debug{
+    grid-area: debug;
+    text-align: center;
+    background-image: radial-gradient(
+      ellipse 55% 16%  at 50% 50%,
+      #6b1839,
+      transparent
+    );
+    span{
+        font-size: 64px; 
+      }
+ 
+}
+.wrk{
+    grid-area: wrk;
+    align-content: flex-end;
+    text-align: right;
+    height: 82px;
+    span{
+        font-size: 36px;
+      }
+}
+
+.srpt{
+    grid-area: srpt;
+    align-content: flex-end;
+    height: 56px;
+    width: 180px;
+    span{
+        font-size: 36px;
+      }
+}
+
+/* ss22 end */
+/* ss24 start */
+.ss24 {
+    width: 750px;   
+    margin: auto;
+    margin-top: 24vh;
+}
+.ss24-non{
+    display: none;
+}
+.ss24-dis{
+    display: grid;
+   grid-template-areas: 
+                         "netw . service"
+                        ". console batch "                       
+                        "url access dom"
+                        ". cmdprt  hash" ;
+                       
+}
+
+
+
+
+.netw{
+  grid-area: netw;
+  height: 52px;
+  width: 170px;
+  align-content: center;
+  span{
+      font-size: 32px;
+    }
+}
+
+.service{
+  grid-area: service;
+  height: 52px;
+  width: 280px;
+  align-content: center;
+  span{
+      font-size: 24px;
+    }
+}
+.batch{
+  grid-area: batch;
+  height: 52px;
+  width: 280px;
+  align-content: center;
+  text-align: end;
+  span{
+      font-size: 38px;
+    }
+}
+.hash{
+  grid-area: hash;
+  height: 52px;
+  width: 280px;
+  align-content: center;
+  text-align: center;
+  span{
+      font-size: 24px;
+    }
+}
+
+.access{
+    font-size: 0px;
+    grid-area: access;
+   
+    background-image: radial-gradient(
+        ellipse 55% 16%  at 50% 50%,
+        #6b1839,
+        transparent
+      );
+      text-align: center;
+      align-content: flex-end;
+      span{
+        font-size: 64px;
+      }
+}
+
+
+.dom{
+    grid-area: dom;
+    height: 52px;
+    width: 280px;
+    align-content: center;
+    span{
+        font-size: 42px;
+      }
+}
+
+
+.console{
+    grid-area: console;
+    text-align: center;
+    height: 82px;
+    span{
+        font-size: 38px; 
+      }
+ 
+}
+.url{
+    grid-area: url;
+    min-width: 160px;
+    align-content: flex-start;
+    text-align: left;
+    span{
+        font-size: 36px;
+      }
+}
+
+.cmdprt{
+    grid-area: cmdprt;
+    align-content: flex-end;
+    height: 76px;
+    width:350px;
+    span{
+        font-size: 36px;
+      }
+}
+
+
+
+/* ss24 end */
+
+.stag{
+    font-size: 0px;
+    grid-area: stag;
+    
+      text-align: center;
+      align-content: flex-end;
+      span{
+        font-size: 28px;
+      }
+}
+.dev{
+    grid-area: dev;
+    height: 52px;
+    align-content: start;
+    span{
+        font-size: 42px;
+      }
+}
+
+.prod{
+    grid-area: prod;
+    height: 52px;
+    width: 280px;
+    align-content: center;
+    span{
+        font-size: 42px;
+      }
+}
+
+.qa{
+    grid-area: qa;
+    height: 76px;
+    align-content: end;
+    span{
+        font-size: 36px;
+      }
+}
+.mer{
+    grid-area: mer;
+    height: 76px;
+    width: 210px;
+    align-content: start;
+    span{
+        font-size: 48px;
+      }
+    
+}
+
+.bug{
+    grid-area: bug;
+    text-align: center;
+    align-content: center;
+    span{
+        font-size: 42px;
+      }
+}
+.git{
+    grid-area: git;
+    text-align: center;
+    background-image: radial-gradient(
+        ellipse 55% 16%  at 50% 50%,
+        #6b1839,
+        transparent
+      );
+    span{
+        font-size: 64px; 
+      }
+      
+ 
+}
+.bran{
+    grid-area: bran;
+    align-content: flex-end;
+    text-align: right;
+    span{
+        font-size: 36px;
+      }
+}
+.task{
+    grid-area: task;
+    align-content: flex-end;
+    width: 280px;
+    height: 96px;
+    span{
+        font-size: 36px;
+      }
+}
+.pr{
+    grid-area: pr;
+    align-content: flex-end;
+    height: 56px;
+    width: 180px;
+    span{
+        font-size: 36px;
+      }
+}
+
+
+.ss18-non{
+    display: none;
+}
+.title span,.t-con{
+    font-size: 36px; 
+}
+#code{
+    margin-left: 8px;
+}
+#build{
+    margin-left: 52px;
+}
+#run{
+    margin-left: 94px;
+}
+#test{
+    margin-left: 128px;
+}
+#deploy{
+    margin-left: 128px;
+}
+@keyframes moving {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(2000px);
+  }
+}
+@keyframes zoom-in {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483, 0 0;
+  }
+  28%,
+  33% {
+    color: #ff65bd;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: #ff2483;
+    text-shadow: none;
+  }
+}
+
+.title .flicker {
+  animation: shine 2.3s forwards, blink 3s 2s infinite;
+}
+
+.title .fast-flicker {
+  animation: shine 1s forwards, blink 10s 1s infinite;
+}
+
+.title-12ss .flicker {
+    animation: shine 2.3s forwards, blink 3s 2s reverse;
+  }
+  
+  .title-12ss .fast-flicker {
+    animation: shine 1s forwards, blink 10s 1s reverse;
+  }
+  .ss12 .item{
+    padding: 1.2vh;
+    z-index: 100;
+  }
+
+@keyframes shine {
+  0% {
+    color: #6b1839;
+    text-shadow: none;
+  }
+  100% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+  95% {
+    opacity: 0.85;
+  }
+  95% {
+    opacity: 0.95;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
